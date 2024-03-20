@@ -11,7 +11,7 @@ function TaskCreate({ onCreate, task, taskformUpdate, onUpdate }) {
     setTaskDesc(event.target.value);
   };
   const handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault(); //sayfanın yenilenmesini engellemek için
     if (taskformUpdate) {
       onUpdate(task.id, title, taskDesc);
     } else {
